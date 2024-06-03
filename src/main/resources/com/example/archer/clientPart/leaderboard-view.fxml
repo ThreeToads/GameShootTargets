@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="300.0" prefHeight="200.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+
+    <TextArea fx:id="leaderboardText" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0" />
+
+    <Button fx:id="refreshButton" text="refresh" mnemonicParsing="false"
+            AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="5"/>
+
+</AnchorPane>

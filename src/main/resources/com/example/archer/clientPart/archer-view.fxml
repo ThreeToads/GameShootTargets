@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainLayout" prefHeight="490.0" prefWidth="960.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.archer.clientPart.controllers.ArcherController">
+    <center>
+        <Pane fx:id="fieldPane" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <HBox style="-fx-background-color: #f0f0f0; -fx-spacing: 10;" BorderPane.alignment="CENTER">
+            <Button fx:id="startButton" disable="true" mnemonicParsing="false" onAction="#startGame" text="Готов">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button fx:id="shootButton" disable="true" mnemonicParsing="false" onAction="#shoot" text="Выстрел">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button fx:id="leaderboardButton" mnemonicParsing="false" onAction="#showLeaderboard" text="Leaderboard">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+            <Button fx:id="pauseButton" disable="true" mnemonicParsing="false" onAction="#pause" text="Пауза">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </bottom>
+    <right>
+        <VBox alignment="CENTER_LEFT" style="-fx-background-color: #f4f4f4; -fx-padding: 10; -fx-spacing: 10;"
+              BorderPane.alignment="CENTER">
+            <ListView fx:id="playerListView"/>
+        </VBox>
+    </right>
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #e0e0e0; -fx-spacing: 10; -fx-padding: 10;" BorderPane.alignment="CENTER">
+            <TextField fx:id="nicknameText" promptText="Введите никнейм">
+            </TextField>
+            <Button fx:id="joinButton" mnemonicParsing="false" onAction="#joinClick" text="Присоединиться">
+            </Button>
+            <Label fx:id="pauseLabel" text="Пауза" visible="false">
+                <font>
+                    <Font size="16.0"/>
+                </font>
+            </Label>
+        </HBox>
+    </top>
+</BorderPane>
