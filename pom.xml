@@ -91,7 +91,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.archer.clientPart.ArcherApplication</mainClass>
+                            <mainClass>com.example.GameShoots.clientPart.ClientApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -116,7 +116,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.example.archer.serverPart.ServerApplication</mainClass>
+                                    <mainClass>com.example.GameShoots.serverPart.ServerApplication</mainClass>
                                 </transformer>
                             </transformers>
                             <shadedClassifierName>server</shadedClassifierName>
@@ -152,7 +152,7 @@
 <!--                        &lt;!&ndash; Default configuration for running with: mvn clean javafx:run &ndash;&gt;-->
 <!--                        <id>default-cli</id>-->
 <!--                        <configuration>-->
-<!--                            <mainClass>com.example.archer/com.example.archer.archerApplication</mainClass>-->
+<!--                            <mainClass>com.example.GameShoots/com.example.GameShoots.archerApplication</mainClass>-->
 <!--                            <launcher>app</launcher>-->
 <!--                            <jlinkZipName>app</jlinkZipName>-->
 <!--                            <jlinkImageName>app</jlinkImageName>-->
@@ -177,7 +177,7 @@
 <!--                        <configuration>-->
 <!--                            <transformers>-->
 <!--                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
-<!--                                    <mainClass>com.example.archer/com.example.archer.serverPart.ServerApplication</mainClass>-->
+<!--                                    <mainClass>com.example.GameShoots/com.example.GameShoots.serverPart.ServerApplication</mainClass>-->
 <!--                                </transformer>-->
 <!--                            </transformers>-->
 <!--                            <shadedClassifierName>server</shadedClassifierName>-->
